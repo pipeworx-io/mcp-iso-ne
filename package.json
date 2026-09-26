@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-iso-ne",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Real-time power grid data for ISO New England, the electricity market and grid operator for Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island and Vermont: wholesale electricity prices, system demand, and electricity generation by fuel type.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-c49ee9c91f2bfe866c19536b1c1ff3032e1da5edc6cfd889a976d0b2f92481be",
-    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
+    "sourceHash": "v1-93d9ae21bd38cf85bd85390a3d6535517c458710971c6791a586772fabb7fa81",
+    "sourceCommit": "1064560fd9dcd0d6fc2606298c2ba244b3a1fbeb"
   }
 }

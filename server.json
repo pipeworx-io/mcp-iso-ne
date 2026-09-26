@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/iso-ne",
   "title": "Iso Ne",
   "description": "Real-time power grid data for ISO New England, the electricity market and grid operator for…",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/iso-ne",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-iso-ne",
