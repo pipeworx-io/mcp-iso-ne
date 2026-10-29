@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-iso-ne",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Real-time power grid data for ISO New England, the electricity market and grid operator for Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island and Vermont: wholesale electricity prices, system demand, and electricity generation by fuel type.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-iso-ne": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "iso-ne"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-iso-ne.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/iso-ne",
   "pipeworx": {
-    "sourceHash": "v1-7aedfaafee1b17b92c047576d4a556a5410553b901ee44be617476be4ff3ee6e",
-    "sourceCommit": "33741fe6d9ba71856e73fa683c73572d1ddf2e93"
+    "mode": "gateway",
+    "slug": "iso-ne",
+    "gatewaySlug": "iso-ne",
+    "sourceHash": "v1-efc1a97dece279e91b3a9c250384bc8c0439ce7c80303f0a7243c5b57cc4163b",
+    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
   }
 }
